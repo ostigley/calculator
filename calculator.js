@@ -5,6 +5,8 @@ var displayStr = "";
 
 $("button").click(function(){
 	inputStr += this.value;
+	
+
 	if(this.value == "C") {
 		clear();
 	} else if(this.value == "=") {
@@ -12,8 +14,8 @@ $("button").click(function(){
 //	$('#outPut').html(output);
 
 	}
-	
-	$('#outPut').html(inputStr);
+	display(inputStr);
+	$('#outPut').html(displayStr);
 
 });
 
@@ -27,6 +29,20 @@ var calculate = function(input){
 };
 
 var display = function(myStr){
-	myStr.replace(/[/]/g, "÷");
-}
+/*	var operators = {
+		"*" : " x ",
+		"/" : " ÷ ",
+		"+" : " + ",
+		"-" : " - ",
+		"  " : " "
+	};*/
+console.log("What the Hell?")
+	displayStr = myStr;
+
+	displayStr = displayStr.replace(/\//g, " ÷ ");
+	displayStr = displayStr.replace(/\*/g, " x ");
+	displayStr = displayStr.replace(/\+/g, " + ");
+	displayStr = displayStr.replace(/\-/g, " - ");
+
+};
 
