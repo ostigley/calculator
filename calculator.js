@@ -3,7 +3,14 @@ var values = [];
 
 $("button").click(function(){
 	inputStr += this.value;
-	console.log(inputStr);
+	if(this.value == "C") {
+		clear();
+	}
 	$('#outPut').html(inputStr);
 });
+
+var clear = function() {
+
+	inputStr = "";
+}
 
