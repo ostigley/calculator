@@ -10,4 +10,31 @@
 
 #outPut {
 	outline: 1px solid black;
+	text-align: right;
+    width: 35em;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+}
+
+table {
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btn {
+	width: 10em;
+}
+
+#id td {
+	width: 20em;
+}
+
+button {
+	box-shadow: 0.5em 0.5em 0.5em #888888;
+}
+
+tr {
+	width: 100%;
 }
