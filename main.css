@@ -1,4 +1,6 @@
-
+body {
+	font-family: 'Orbitron', sans-serif;
+}
 
 @media (max-width: 500px) {
 	#buttons {
@@ -11,10 +13,15 @@
 #outPut {
 	outline: 1px solid black;
 	text-align: right;
-    width: 35em;
+    width: 17.5em;
     margin-left: auto;
     margin-right: auto;
     margin-top: 100px;
+    box-shadow: inset 0.2em 0.2em 0.2em #888;
+    font-size: 2em;
+    padding-top: 0.3em;
+    background-color: black;
+    color: springgreen;
 }
 
 table {
@@ -33,8 +40,24 @@ table {
 
 button {
 	box-shadow: 0.5em 0.5em 0.5em #888888;
+	background-color: tan;
+    color: white;
 }
 
 tr {
 	width: 100%;
+}
+
+#logo {
+	text-align: center;
+}
+
+.calculator {
+	background-color: cornsilk;
+    border: 3px black solid;
+    border-radius: 5%;
+    margin-top: 50px;
+    width: 40em;
+    margin-left: auto;
+    margin-right: auto;
 }
