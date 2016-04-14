@@ -5,16 +5,16 @@ var displayStr = "";
 
 $("button").click(function(){
 	inputStr += this.value;
-	
-
+	displayStr += this.innerHTML;
 	if(this.value == "C") {
 		clear();
-	} else if(this.value == "=") {
+	} else if( this.value == "=") {
 //		calculate(inputStr);
 //	$('#outPut').html(output);
-
 	}
-	display(inputStr);
+
+
+//	display(inputStr);
 	$('#outPut').html(displayStr);
 
 });
@@ -22,27 +22,13 @@ $("button").click(function(){
 var clear = function() {
 
 	inputStr = "";
+	displayStr = "";
 }
 
 var calculate = function(input){
-		output = eval(input);
+	output = eval(input);
 };
 
-var display = function(myStr){
-/*	var operators = {
-		"*" : " x ",
-		"/" : " ÷ ",
-		"+" : " + ",
-		"-" : " - ",
-		"  " : " "
-	};*/
-console.log("What the Hell?")
-	displayStr = myStr;
 
-	displayStr = displayStr.replace(/\//g, " ÷ ");
-	displayStr = displayStr.replace(/\*/g, " x ");
-	displayStr = displayStr.replace(/\+/g, " + ");
-	displayStr = displayStr.replace(/\-/g, " - ");
 
-};
 
